@@ -15,18 +15,23 @@ public class ActividadesED {
         int [] numeros2 = new int[7];
         int mayor = 0, indice = 0;
         for (int i = 0; i < 7; i++) {
-            //System.out.println("El valor de i = " + i +"\n");
             for (int j = 0; j < 7; j++) {
-                 //System.out.println("El valor de j = " + j +"\n");
                 if (mayor < numeros[j]) {
                     mayor = numeros[j];
                     indice = j;
-                    //System.out.println("El valor de j en el if= "+j+"\nMayor = "+mayor);
                 }
             }
             numeros[indice] = 0;
             numeros2[i] = mayor;
-            System.out.println(numeros2[i]);
+            mayor = 0;
+            //System.out.println(numeros2[i]);
         }
+        int f = 0;
+        for (int i = numeros.length - 1; i >= 0; i--) {
+            numeros[f] = numeros2[i];
+            System.out.println(numeros[f]);
+            f++;
+        }
+        
     }
 }
