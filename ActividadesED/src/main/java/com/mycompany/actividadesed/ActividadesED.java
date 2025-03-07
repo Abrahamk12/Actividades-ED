@@ -4,34 +4,26 @@
 
 package com.mycompany.actividadesed;
 
-/**
- *
- * @author super
+import java.util.Stack;
+
+/*
+  Usar metodo para predefinir los datos o usar
+  una variable String con la oparcion
+  Crear un metod que predefina datos y operadores
+  aritmeticos en una pila
+  Obtener esos datos y realizar la operacon correspondiente
+
+  charAt()
+
  */
 public class ActividadesED {
 
     public static void main(String[] args) {
-        int [] numeros = {4, 7, 3, 10, 1, 15, 2};
-        int [] numeros2 = new int[7];
-        int mayor = 0, indice = 0;
-        for (int i = 0; i < 7; i++) {
-            for (int j = 0; j < 7; j++) {
-                if (mayor < numeros[j]) {
-                    mayor = numeros[j];
-                    indice = j;
-                }
-            }
-            numeros[indice] = 0;
-            numeros2[i] = mayor;
-            mayor = 0;
-            //System.out.println(numeros2[i]);
-        }
-        int f = 0;
-        for (int i = numeros.length - 1; i >= 0; i--) {
-            numeros[f] = numeros2[i];
-            System.out.println(numeros[f]);
-            f++;
-        }
+        Stack<Character> pila = new Stack<>();
+        String operacion = "52+15", operadores = "*/+-", temp;
         
+        for (int i = 0; i < operacion.length(); i++) {
+            
+        }
     }
 }
