@@ -2,7 +2,7 @@ package com.mycompany.actividadesed;
 public class ActividadesED {
     public static void main(String[] args) {
         Persona personas [] = new Persona[3];
-        Nodo raiz = new Nodo(new Persona("Raiz"));
+        Nodo raiz = new Nodo(new Persona("Comidas", "General", 100));
         Nodo hijos [] = new Nodo[3];
         personas[0] = new Persona("Juan Peres", "Patata Potatos",15);
         personas[1] = new Persona("Tomate Jitomate", "Vegeteal",10);
