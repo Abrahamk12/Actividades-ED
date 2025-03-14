@@ -13,6 +13,9 @@ public class ActividadesED {
             hijos[i] = new Nodo(personas[i]); // Crear nodo para cada Persona
             raiz.agregarHijo(hijos[i]);      // Agregar el nodo como hijo de la raíz
         }
+        Nodo nieto = new Nodo(new Persona("El nieto", "nieto", 5));
+        hijos[0].agregarHijo(nieto);
+        
         imprimirArbol(raiz, "");
     }
     public static void imprimirArbol(Nodo nodo, String prefijo) {
