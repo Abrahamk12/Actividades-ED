@@ -27,6 +27,6 @@ public class Persona {
     }
     @Override
     public String toString() { // Sobrescribir toString para imprimir fácilmente
-        return this.nombres + " " + this.apellidos + ", " + this.edad;
+        return this.nombres + " " + this.apellidos + ", edad:" + this.edad;
     }
 }
